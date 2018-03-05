@@ -1,0 +1,28 @@
+{
+  "name": "worship-set-saver",
+  "version": "1.0.0",
+  "description": "Helps organize your worship set list",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WinstonMarvel/worship-set-saver/"
+  },
+  "keywords": [
+    "worship",
+    "team",
+    "worship",
+    "leading",
+    "song",
+    "list"
+  ],
+  "author": "Winston Marvel Jude",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.8"
+  }
+}
