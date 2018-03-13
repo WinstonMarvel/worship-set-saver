@@ -29,12 +29,22 @@ router.route("/worshipset")
 
 
 
-router.route("/worshipset/:id")
+router.route("/worshipset/:id") 
+
+.put(function(req,res){
+	console.log(req.body);
+	Worshipset.findByIdAndUpdate( req.params.id , req.body , function(err, set){
+		if(err)
+			console.log(err);
+		res.send("success");
+	});
+})
 
 .delete(function(req,res){ //Deletes an existing list
 	Worshipset.remove( { _id : req.params.id}, function(err, set){
 		if (err)
 			console.log(err);
+		res.send("success");
 	});
 	console.log("deleteing " + req.params.id);
 
